@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+
+    <title>Quest 5</title>
+</head>
+
+<body>
+    <header>
+    </header>
+    <div class="header-text ">
+        <h1 id="h-text">Lunaphelia</h1>
+        <p id="h-text2">Discover. Create. Inspire</p>
+    </div>
+    <div class="scroll-down-btn">
+        <a href="#discover"><button class="btn"><i class="fa fa-caret-down fa-3x text-light" aria-hidden="true"></i></a>
+        </button>
+    </div>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bgcolor">
+        <div class="container">
+            <a class="navbar-brand " href="#">Lunaphelia</a>
+            <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbar1">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link " href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-4" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-4 " href="#">Tips and Tricks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-4 " href="#">Photoshoots</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-4" href="#">Presets</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="discover">
+    </div>
+    <div class="container pt-5 mt-5">
+        <h1 class="text-center">Discover</h1>
+        <img class="discover-img" src="assets/pink-petaled-flowers-in-close-up-photography.jpg" width="50%" height="50%">
+        <div class="learn-more-text mt-5">
+            <h5>Learn more about the world of photography</h5>
+            <p class="mt-3 lm-text mx-auto"> If you're fascinated by photography this is the right place for you. Here you'll find tips and tricks for anything and everything concerning photography. Discover a source of inspiration as photographer, model, blogger or other creative. No
+                matter if you're a beginner, intermediate or professional. This is a community based platform to keep you inspired.</p>
+            <button class="learn-more-btn">Learn More</button>
+        </div>
+        <div class="images">
+            <div class="row">
+                <div class="col-4">
+                    <img src="assets/1.jpg" width="300px" height="300px">
+                </div>
+                <div class="col-4">
+                    <img src="assets/2.jpg" width="300px" height="300px">
+                </div>
+                <div class=" col-4 ">
+                    <img src="assets/3.jpg " width="300px " height="300px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <p>Lunaphelia</p>
+                    <a href="#" class="link">Lunaphelia@gmail.com</a>
+                </div>
+                <div class="col-6 text-right">
+                    <a href="#" class="link">Contacts</a><br>
+                    <a href="#" class="link">Privacy Policy</a>
+                    <br> <a href="#" class="link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    <script>
+        $(document).ready(function() {
+            var scroll_pos = 0;
+            $(document).scroll(function() {
+                scroll_pos = $(this).scrollTop();
+                if (scroll_pos > 210) {
+                    $("nav ").css('background-color', 'white');
+                    $("nav a ").css('color', 'black');
+                } else {
+                    $("nav ").css('background-color', 'transparent');
+                    $("nav a ").css('color', 'white');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
